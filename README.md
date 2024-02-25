@@ -29,7 +29,7 @@ RegisterNumber: 212222240005
 /*
 import numpy as np
 import matplotlib.pyplot as plt
-``python
+``py
 # Preprocessing Data
 
 X=np.array(eval(input()))
@@ -54,7 +54,6 @@ print(Y_pred)
 plt.scatter(X,Y)
 plt.plot(X,Y_pred,color='red') 
 plt.show()
-```
 ```
 
 ## Output:
