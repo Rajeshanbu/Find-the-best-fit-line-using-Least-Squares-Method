@@ -1,4 +1,4 @@
-# Implementation of Univariate Linear Regression
+![image](https://github.com/Rajeshanbu/Find-the-best-fit-line-using-Least-Squares-Method/assets/118924713/fb11b6c6-b96e-4020-93e9-81ba94f14e5e)# Implementation of Univariate Linear Regression
 ## AIM:
 To implement univariate Linear Regression to fit a straight line using least squares.
 
@@ -20,13 +20,45 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
+Developed by: RAJESH A
+RegisterNumber: 21222100042
 */
+/*Program to implement univariate Linear Regression to fit a straight line using least squares.
+Developed by: AJAY ASWIN M
+RegisterNumber: 212222240005
+/*
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Preprocessing Data
+
+X=np.array(eval(input()))
+Y=np.array(eval(input()))
+
+# Mean
+X_mean = np.mean(X)
+Y_mean = np.mean(Y)
+num = 0 #for slope
+denom = 0 #for slope
+
+# to find sum of (xi-x')&(yi-y')&(xi-x')^2
+for i in range(len(X)):
+    num+=(X[i]-X_mean)*(Y[i]-Y_mean)
+    denom+=(X[i]-X_mean)**2
+m=num/denom
+print(m)
+b=Y_mean - m*X_mean
+print(b)
+Y_pred=m*X+b
+print(Y_pred)
+plt.scatter(X,Y)
+plt.plot(X,Y_pred,color='red') 
+plt.show()
 ```
 
 ## Output:
 ![best fit line](sam.png)
+"C:\Users\SEC\Pictures\Screenshots\RAJESH EXP01 AIML.png"
 
 
 ## Result:
