@@ -29,7 +29,7 @@ RegisterNumber: 212222240005
 /*
 import numpy as np
 import matplotlib.pyplot as plt
-``py
+```py
 # Preprocessing Data
 
 X=np.array(eval(input()))
